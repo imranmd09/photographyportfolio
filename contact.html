@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Lens & Lore Photography</title>
+    <meta name="description" content="Get in touch with Lens & Lore Photography for bookings, collaborations, print inquiries, or any questions about our services">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/modern.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    
+    <!-- Mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="site-logo">
+                    <a href="index.html">
+                        <span class="logo-text">Lens & Lore</span>
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title fade-in">Get in Touch</h1>
+                <p class="page-subtitle fade-in delay-1">Let's discuss your project and create something beautiful together</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container fade-in delay-1">
+                        <div class="form-header">
+                            <h2>Send a Message</h2>
+                            <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                        </div>
+                        
+                        <form id="contactForm" class="modern-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name">Name <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" required aria-required="true">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" required aria-required="true">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject <span class="required">*</span></label>
+                                <input type="text" id="subject" name="subject" required aria-required="true">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="newsletter" id="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to newsletter for updates on new work and exhibitions
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">
+                                <span class="button-text">Send Message</span>
+                                <span class="button-icon"><i class="fas fa-paper-plane"></i></span>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info-container fade-in delay-2">
+                        <div class="contact-info-card">
+                            <div class="contact-info-header">
+                                <h2>Contact Information</h2>
+                                <p>Feel free to reach out through any of these channels</p>
+                            </div>
+                            
+                            <ul class="contact-info-list">
+                                <li>
+                                    <div class="info-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h3>Email</h3>
+                                        <p><a href="mailto:info@lenslore.com">info@lenslore.com</a></p>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="info-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h3>Phone</h3>
+                                        <p>+1 (555) 123-4567</p>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="info-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h3>Studio Location</h3>
+                                        <p>123 Photography Lane<br>New York, NY 10001<br>United States</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <div class="contact-social">
+                                <h3>Connect on Social Media</h3>
+                                <div class="social-links">
+                                    <a href="https://www.instagram.com/yourusername" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.pinterest.com/yourusername" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="studio-hours">
+                                <h3>Studio Hours</h3>
+                                <ul class="hours-list">
+                                    <li><span>Monday - Friday:</span> 9:00 AM - 6:00 PM</li>
+                                    <li><span>Saturday:</span> 10:00 AM - 4:00 PM</li>
+                                    <li><span>Sunday:</span> Closed</li>
+                                </ul>
+                                <p class="appointment-note">* Appointments outside these hours available upon request</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map Section -->
+        <section class="map-section fade-in delay-3">
+            <div id="map" class="contact-map">
+                <!-- Map will be loaded here -->
+                <div class="map-placeholder">
+                    <div class="placeholder-text">Studio Location Map</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Find answers to common questions about working with me</p>
+                </div>
+                
+                <div class="faq-grid fade-in delay-1">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What types of photography services do you offer?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>I specialize in portrait, landscape, street, and abstract photography. I offer services for personal portraits, commercial projects, fine art prints, and exhibitions. Each project is approached with a personalized touch to meet your specific vision and needs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I purchase prints of your work?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Prints can be purchased directly through this website or by contacting me via email. Each print is carefully produced using museum-quality materials and comes with a certificate of authenticity. Custom sizes and framing options are available upon request.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is your booking process for portrait sessions?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The booking process begins with an initial consultation to discuss your vision, preferred style, and logistics. Once details are confirmed, a 50% deposit secures your date. After the session, you'll receive a curated gallery of images to select from for final editing and delivery.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you travel for photography assignments?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, I'm available for travel both domestically and internationally. Travel fees vary depending on location and duration of the assignment. Please contact me with your specific requirements for a custom quote including travel expenses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">Lens & Lore</div>
+                    <p class="footer-text">Capturing moments and creating memories through the art of photography. Available for commissions, exhibitions, and special projects.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/yourusername" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.pinterest.com/yourusername" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3 class="footer-heading">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-portfolio">
+                    <h3 class="footer-heading">Portfolio</h3>
+                    <ul class="footer-links">
+                        <li><a href="portfolio.html#portraits">Portraits</a></li>
+                        <li><a href="portfolio.html#landscapes">Landscapes</a></li>
+                        <li><a href="portfolio.html#street">Street</a></li>
+                        <li><a href="portfolio.html#abstract">Abstract</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@lenslore.com">info@lenslore.com</a></li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> New York, NY</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lens & Lore Photography. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart" style="color: var(--color-accent);"></i> by <a href="#">Creative Studio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/modern.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+    <script>
+        // Initialize map when available
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof mapboxgl !== 'undefined') {
+                mapboxgl.accessToken = 'YOUR_MAPBOX_TOKEN'; // Replace with your actual token
+                const map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/mapbox/light-v10',
+                    center: [-74.0060, 40.7128], // New York coordinates
+                    zoom: 12
+                });
+                
+                // Add marker
+                new mapboxgl.Marker({
+                    color: '#c9a77c'
+                })
+                .setLngLat([-74.0060, 40.7128])
+                .addTo(map);
+            }
+        });
+        
+        // FAQ toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const toggle = item.querySelector('.faq-toggle');
+                
+                question.addEventListener('click', function() {
+                    const isOpen = item.classList.contains('active');
+                    
+                    // Close all FAQ items
+                    faqItems.forEach(faqItem => {
+                        faqItem.classList.remove('active');
+                        faqItem.querySelector('.faq-answer').style.maxHeight = null;
+                        faqItem.querySelector('.faq-toggle i').className = 'fas fa-plus';
+                    });
+                    
+                    // Open clicked item if it was closed
+                    if (!isOpen) {
+                        item.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        toggle.querySelector('i').className = 'fas fa-minus';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

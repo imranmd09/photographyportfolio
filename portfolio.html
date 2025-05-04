@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Lens & Lore Photography</title>
+    <meta name="description" content="Explore the diverse photography portfolio of Lens & Lore - featuring portraits, landscapes, street photography, and abstract art">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="css/modern.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Non-critical CSS - loaded asynchronously -->
+    <link rel="stylesheet" href="css/lightbox.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/context-aware.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/size-adjustments.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/optimize.css" media="print" onload="this.media='all'">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" href="images/placeholder1.jpg" as="image">
+    <link rel="preload" href="images/placeholder1.jpeg" as="image">
+    
+    <!-- Image fix script - load immediately -->
+    <script src="js/image-fix.js"></script>
+</head>
+<body class="header-transparent force-dark-header">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    
+    <!-- Header -->
+    <header class="site-header transparent">
+        <div class="container">
+            <div class="header-inner">
+                <div class="site-logo">
+                    <a href="index.html">
+                        <span class="logo-text">Lens & Lore</span>
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Portfolio Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title fade-in">Portfolio</h1>
+                <p class="page-subtitle fade-in delay-1">A curated collection of my finest work across various genres</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Filter -->
+        <section class="portfolio-filter-section">
+            <div class="container">
+                <div class="portfolio-filter fade-in delay-1">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="portrait">Portraits</button>
+                    <button class="filter-btn" data-filter="landscape">Landscapes</button>
+                    <button class="filter-btn" data-filter="street">Street</button>
+                    <button class="filter-btn" data-filter="abstract">Abstract</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery -->
+        <section class="portfolio-gallery-section">
+            <div class="container">
+                <div class="portfolio-grid">
+                    <!-- Portraits -->
+                    <div class="portfolio-item portrait fade-in delay-1">
+                        <div class="portfolio-image">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/placeholder1.jpg" alt="Portrait of a young woman with natural lighting against a neutral background" data-caption="Natural Light Portrait - Exploring emotion through minimalist portraiture" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Natural Light Portrait</h3>
+                                    <span class="portfolio-category">Portrait</span>
+                                    <div class="portfolio-actions">
+                                        <button class="view-btn" aria-label="View larger image"><i class="fas fa-search-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item portrait fade-in delay-1">
+                        <div class="portfolio-image">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/placeholder2.jpg" alt="Environmental portrait of an artist in their studio surrounded by their work" data-caption="The Artist - Environmental portrait capturing creative essence" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>The Artist</h3>
+                                    <span class="portfolio-category">Portrait</span>
+                                    <div class="portfolio-actions">
+                                        <button class="view-btn" aria-label="View larger image"><i class="fas fa-search-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item portrait fade-in delay-1">
+                        <div class="portfolio-image">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/placeholder3.jpg" alt="Black and white portrait showing dramatic shadows and contrast" data-caption="Shadow Play - Exploring contrast and form in monochrome" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Shadow Play</h3>
+                                    <span class="portfolio-category">Portrait</span>
+                                    <div class="portfolio-actions">
+                                        <button class="view-btn" aria-label="View larger image"><i class="fas fa-search-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Landscapes -->
+                    <div class="portfolio-item landscape fade-in delay-1">
+                        <div class="portfolio-image">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/placeholder4.jpg" alt="Panoramic mountain vista with dramatic clouds and valley below" data-caption="Mountain Vista - Captured at 6,000 feet elevation during changing weather" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Mountain Vista</h3>
+                                    <span class="portfolio-category">Landscape</span>
+                                    <div class="portfolio-actions">
+                                        <button class="view-btn" aria-label="View larger image"><i class="fas fa-search-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item landscape fade-in delay-1">
+                        <div class="portfolio-image">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/placeholder5.jpg" alt="Coastal seascape at sunset with silhouetted rocks and reflections" data-caption="Coastal Reflections - Long exposure seascape at twilight" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Coastal Reflections</h3>
+                                    <span class="portfolio-category">Landscape</span>
+                                    <div class="portfolio-actions">
+                                        <button class="view-btn" aria-label="View larger image"><i class="fas fa-search-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item landscape fade-in delay-1">
+                        <div class="portfolio-image">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/placeholder6.jpg" alt="Forest scene with fog filtering through trees creating ethereal atmosphere" data-caption="Forest Mist - Early morning light in ancient woodland" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Forest Mist</h3>
+                                    <span class="portfolio-category">Landscape</span>
+                                    <div class="portfolio-actions">
+                                        <button class="view-btn" aria-label="View larger image"><i class="fas fa-search-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Street -->
+                    <div class="portfolio-item street fade-in delay-1">
+                        <div class="portfolio-image">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/placeholder1.jpg" alt="Candid street scene capturing daily life in an urban setting" data-caption="Urban Rhythm - Documenting the pulse of city life" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Urban Rhythm</h3>
+                                    <span class="portfolio-category">Street</span>
+                                    <div class="portfolio-actions">
+                                        <button class="view-btn" aria-label="View larger image"><i class="fas fa-search-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item street fade-in delay-1">
+                        <div class="portfolio-image">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/placeholder2.jpg" alt="Night street photography with neon lights and reflections on wet pavement" data-caption="Neon Nights - The city transforms after rainfall" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Neon Nights</h3>
+                                    <span class="portfolio-category">Street</span>
+                                    <div class="portfolio-actions">
+                                        <button class="view-btn" aria-label="View larger image"><i class="fas fa-search-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Abstract -->
+                    <div class="portfolio-item abstract fade-in delay-1">
+                        <div class="portfolio-image">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/placeholder3.jpg" alt="Abstract architectural detail showing geometric patterns and light interplay" data-caption="Geometric Light - Finding patterns in urban architecture" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Geometric Light</h3>
+                                    <span class="portfolio-category">Abstract</span>
+                                    <div class="portfolio-actions">
+                                        <button class="view-btn" aria-label="View larger image"><i class="fas fa-search-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item abstract fade-in delay-1">
+                        <div class="portfolio-image">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/placeholder4.jpg" alt="Macro abstract of natural textures and patterns creating an otherworldly scene" data-caption="Micro Cosmos - The universe found in everyday details" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Micro Cosmos</h3>
+                                    <span class="portfolio-category">Abstract</span>
+                                    <div class="portfolio-actions">
+                                        <button class="view-btn" aria-label="View larger image"><i class="fas fa-search-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="cta-section dark-background">
+            <div class="container">
+                <div class="cta-content fade-in">
+                    <h2>Interested in Working Together?</h2>
+                    <p>I'm available for commissions, exhibitions, and special projects.</p>
+                    <a href="contact.html" class="cta-button force-light-text">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">Lens & Lore</div>
+                    <p class="footer-text">Capturing moments and creating memories through the art of photography. Available for commissions, exhibitions, and special projects.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/yourusername" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.pinterest.com/yourusername" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3 class="footer-heading">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-portfolio">
+                    <h3 class="footer-heading">Portfolio</h3>
+                    <ul class="footer-links">
+                        <li><a href="portfolio.html#portraits">Portraits</a></li>
+                        <li><a href="portfolio.html#landscapes">Landscapes</a></li>
+                        <li><a href="portfolio.html#street">Street</a></li>
+                        <li><a href="portfolio.html#abstract">Abstract</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@lenslore.com">info@lenslore.com</a></li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> New York, NY</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lens & Lore Photography. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart" style="color: var(--color-accent);"></i> by <a href="#">Creative Studio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modern Lightbox -->
+    <div class="modern-lightbox">
+        <div class="lightbox-container">
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-description"></p>
+            </div>
+        </div>
+        <div class="lightbox-close">&times;</div>
+        <div class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/modern.js" defer></script>
+    <script src="js/lightbox.js" defer></script>
+    <script src="js/context-aware-fallback.js" defer></script>
+    <script src="js/performance.js" defer></script>
+</body>
+</html>
