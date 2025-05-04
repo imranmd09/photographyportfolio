@@ -1,0 +1,217 @@
+/* Context-Aware Elements for Lens & Lore Photography
+   Advanced styling for adaptive UI elements
+-------------------------------------------------- */
+
+/* Context-Aware Navigation and Logo */
+.site-header {
+    --text-color: #000000;
+    --bg-color: rgba(255, 255, 255, 0.95);
+    background-color: var(--bg-color);
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.site-header.over-dark {
+    --text-color: #ffffff;
+    --bg-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Force dark text for header over hero section with light background */
+.site-header.transparent:not(.over-dark) {
+    --text-color: #000000;
+    --bg-color: rgba(255, 255, 255, 0);
+}
+
+/* Add a semi-transparent background to ensure text readability on light hero images */
+.site-header.transparent:not(.over-dark)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+}
+
+.site-header.scrolled {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.site-logo a,
+.main-nav a {
+    color: var(--text-color);
+    transition: color 0.3s ease, opacity 0.3s ease;
+    font-weight: 500;
+}
+
+/* Ensure the underline effect uses the same adaptive color */
+.main-nav a::after {
+    background-color: currentColor;
+}
+
+/* Navigation toggle for mobile - make it context-aware */
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+    background-color: var(--text-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Context-Aware Cursor */
+.custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, opacity 0.3s;
+}
+
+.custom-cursor.active {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+}
+
+/* Hide default cursor when custom cursor is active */
+body.cursor-active {
+    cursor: none;
+}
+
+body.cursor-active a,
+body.cursor-active button,
+body.cursor-active .gallery-item,
+body.cursor-active input,
+body.cursor-active textarea,
+body.cursor-active select,
+body.cursor-active .nav-toggle {
+    cursor: none;
+}
+
+/* Context-aware buttons */
+.context-aware-btn {
+    position: relative;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    background-color: transparent;
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.context-aware-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--text-color);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.context-aware-btn:hover {
+    color: var(--bg-color);
+}
+
+.context-aware-btn:hover::before {
+    transform: translateX(0);
+}
+
+/* Context-aware text for sections that might be over different backgrounds */
+.context-aware-text {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+/* Helper class to force light text */
+.force-light-text {
+    --text-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+/* Helper class to force dark text */
+.force-dark-text {
+    --text-color: #000000 !important;
+    color: #000000 !important;
+}
+
+/* Dark background sections */
+.dark-background {
+    --text-color: #ffffff;
+    --bg-color: rgba(0, 0, 0, 0.75);
+    color: var(--text-color);
+}
+
+/* Light background sections that need dark text */
+.light-background {
+    --text-color: #000000;
+    --bg-color: rgba(255, 255, 255, 0.95);
+    color: var(--text-color);
+}
+
+/* Ensure proper contrast for important UI elements */
+.hero-content h1,
+.hero-content p,
+.cta-content h2,
+.cta-content p {
+    color: #ffffff;
+}
+
+/* For light hero backgrounds, override text color */
+.hero.light-background .hero-content h1,
+.hero.light-background .hero-content p {
+    color: #000000;
+}
+
+/* Header transparency states */
+.header-transparent .site-header {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.header-transparent .site-header.scrolled {
+    background-color: var(--bg-color);
+}
+
+/* Gradient overlay for header when over hero section */
+.site-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.site-header.over-dark.transparent::after {
+    opacity: 1;
+}
+
+/* Force black text for header */
+.force-dark-header .site-header {
+    --text-color: #000000 !important;
+}
+
+.force-dark-header .site-header .site-logo a,
+.force-dark-header .site-header .main-nav a {
+    color: #000000;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.force-dark-header .site-header .nav-toggle span,
+.force-dark-header .site-header .nav-toggle span::before,
+.force-dark-header .site-header .nav-toggle span::after {
+    background-color: #000000;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}

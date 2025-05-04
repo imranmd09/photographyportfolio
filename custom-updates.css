@@ -1,0 +1,108 @@
+/* Custom Updates for Lens & Lore Photography
+   Specific styling overrides
+-------------------------------------------------- */
+
+/* Navigation and Logo Color Updates */
+.site-logo a,
+.main-nav a {
+    color: #000000;
+    font-weight: 500;
+}
+
+.site-header.scrolled .site-logo a,
+.site-header.scrolled .main-nav a {
+    color: #000000;
+}
+
+/* Make sure active nav items maintain black color but still show accent on hover/active state */
+.main-nav a::after {
+    background-color: #000000;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #000000;
+}
+
+/* Context-aware cursor */
+.custom-cursor {
+    mix-blend-mode: difference;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.custom-cursor.active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* This creates an inverted effect - cursor will appear white on dark backgrounds and black on light backgrounds */
+.custom-cursor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: #ffffff;
+    mix-blend-mode: difference;
+}
+
+/* Ensure nav toggle maintains black color */
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+    background-color: #000000;
+}
+
+/* Footer logo color */
+.footer-logo {
+    color: #000000;
+}
+
+/* Make sure buttons maintain proper contrast */
+.view-more-btn,
+.cta-button,
+.submit-button {
+    color: #000000;
+    border-color: #000000;
+}
+
+.view-more-btn:hover::before,
+.cta-button:hover::before,
+.submit-button:hover::before {
+    background-color: #000000;
+}
+
+/* Ensure section titles are black */
+.section-title,
+.page-title {
+    color: #000000;
+}
+
+/* Update accent color references to black where appropriate */
+.text-accent {
+    color: #000000;
+}
+
+.section-title::after {
+    background-color: #000000;
+}
+
+/* Ensure proper contrast on dark sections */
+.hero-content h1,
+.hero-content p,
+.cta-section h2,
+.cta-section p {
+    color: #ffffff;
+}
+
+/* Update social icons to black */
+.social-links a {
+    color: #000000;
+}
+
+.social-links a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}

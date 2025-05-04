@@ -1,0 +1,182 @@
+/* Size Adjustments for Lens & Lore Photography
+   Optimizing image sizes and proportions
+-------------------------------------------------- */
+
+/* About Preview Section - Photographer Photo */
+.about-preview-image {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.about-preview-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Instagram Grid Adjustments */
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.instagram-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.instagram-item::before {
+    content: '';
+    display: block;
+    padding-top: 100%; /* Creates a square aspect ratio */
+}
+
+.instagram-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.instagram-item:hover {
+    transform: translateY(-5px);
+}
+
+.instagram-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Instagram Follow Button */
+.instagram-follow-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+.instagram-follow-btn i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+/* Portfolio Page Adjustments */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    margin-bottom: 20px;
+}
+
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1/1;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover .portfolio-image img {
+    transform: scale(1.05);
+}
+
+/* About Page Adjustments */
+.about-image {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section Adjustments */
+.profile-image {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    filter: grayscale(50%);
+    transition: filter 0.3s ease;
+}
+
+.profile-image:hover img {
+    filter: grayscale(0%);
+}
+
+/* Testimonial Author Images */
+.testimonial-author .author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .about-preview-image,
+    .about-image,
+    .profile-image {
+        max-width: 350px;
+    }
+    
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .about-preview-image,
+    .about-image,
+    .profile-image {
+        max-width: 280px;
+    }
+    
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+}
